@@ -37,6 +37,11 @@ function onDataReceived(text) {
   if (text === 'quit\n' || text === 'exit\n')  {
     quit();
   }
+  else if (text === 'help\n'){
+  
+    help();
+
+}
   else if(text === 'hello\n'){
     hello();
   }
@@ -67,7 +72,9 @@ function hello(){
   console.log('hello!')
 }
 
-
+function help (){
+  console.log(" quit : quit the app\n","Exit : Exit the app\n","hello : say hello app name\n")
+ }
 /**
  * Exits the application
  *
